@@ -1,0 +1,19 @@
+name: "SimpleEnderChest"
+version: '${version}'
+main: "me.porey.simpleenderchest.SimpleEnderChestPlugin"
+api-version: '1.13'
+prefix: "SimpleEnderChest"
+author: "Porey"
+description: "A very simple and lightweight plugin that adds a /enderchest command."
+
+commands:
+  enderchest:
+    permission: "simpleenderchest.use"
+    aliases:
+      - "echest"
+
+permissions:
+  simpleenderchest.use:
+    default: true
+  simpleenderchest.use.others:
+    default: op
