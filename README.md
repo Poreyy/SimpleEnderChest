@@ -6,8 +6,8 @@
 
 # Commands & Permissions
 
-``/enderchest`` - Opens up the player's Ender Chest.
+``/enderchest`` - Opens up the player's Ender Chest.\
 Permission: ``simpleenderchest.use`` (Set to true by default)
 
-``/enderchest [player]`` - Opens up another player's Ender Chest.
+``/enderchest [player]`` - Opens up another player's Ender Chest.\
 Permission: ``simpleenderchest.use.others``
