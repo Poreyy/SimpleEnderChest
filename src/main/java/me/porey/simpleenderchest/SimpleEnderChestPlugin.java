@@ -16,7 +16,7 @@ public class SimpleEnderChestPlugin extends JavaPlugin {
         Player player = (Player) sender;
         if(args.length == 0) {
             // Opening their own ender chest
-            player.openInventory(player.getEnderChest());
+            openEnderChest(player, player);
             return true;
         }
         // Targeting another player
@@ -27,7 +27,7 @@ public class SimpleEnderChestPlugin extends JavaPlugin {
 
     private void handleTargetPlayer(Player sender, String targetName) {
         if(!sender.hasPermission("simpleenderchest.use.others")) {
-            sender.openInventory(sender.getEnderChest());
+            openEnderChest(sender, sender);
             return;
         }
         Player target = sender.getServer().getPlayerExact(targetName);
@@ -35,6 +35,10 @@ public class SimpleEnderChestPlugin extends JavaPlugin {
             sender.sendMessage("Could not find player with name " + targetName + "!");
             return;
         }
-        sender.openInventory(target.getEnderChest());
+        openEnderChest(sender, target);
+    }
+
+    private void openEnderChest(Player player, Player target) {
+        player.openInventory(target.getEnderChest());
     }
 }

@@ -1,10 +1,11 @@
 name: "SimpleEnderChest"
-version: '${version}'
+version: '${project.version}'
 main: "me.porey.simpleenderchest.SimpleEnderChestPlugin"
 api-version: '1.13'
-prefix: "SimpleEnderChest"
+prefix: "${project.name}"
 author: "Porey"
-description: "A very simple and lightweight plugin that adds a /enderchest command."
+description: "${project.description}"
+website: "${project.url}"
 
 commands:
   enderchest:
