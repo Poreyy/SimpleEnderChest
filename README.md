@@ -1,6 +1,6 @@
 # Downloads
 
-You can either download the plugin from the [SpigotMC resource page](https://www.spigotmc.org/resources/simpleenderchest.117299/).
+You can download the plugin from the [SpigotMC resource page](https://www.spigotmc.org/resources/simpleenderchest.117299/).
 
 # Installation
 
