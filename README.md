@@ -15,3 +15,11 @@ Permission: ``simpleenderchest.use`` (Set to true by default)
 
 ``/enderchest [player]`` - Opens up another player's Ender Chest\
 Permission: ``simpleenderchest.use.others``
+
+# Contributing
+
+If you want to contribute to the project, clone the repository to your machine, make your desired changes to the code, and submit a pull request.
+
+# License
+
+The project is licensed under the [MIT](https://opensource.org/license/mit) license. See [LICENSE.TXT](https://github.com/Poreyy/SimpleEnderChest/blob/main/LICENSE.txt) for more info.
