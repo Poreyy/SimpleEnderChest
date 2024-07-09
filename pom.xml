@@ -15,7 +15,6 @@
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <output.directory>C:\Users\samer\Development Tools\Test Servers\Paper 1.20.4\plugins</output.directory>
     </properties>
     <url>https://github.com/Poreyy/SimpleEnderChest</url>
 
@@ -47,14 +46,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.3.1</version>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.4.2</version>
-                <configuration>
-                    <outputDirectory>${output.directory}</outputDirectory>
-                </configuration>
             </plugin>
         </plugins>
         <resources>
