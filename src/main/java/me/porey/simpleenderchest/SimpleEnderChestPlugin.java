@@ -20,16 +20,16 @@ public class SimpleEnderChestPlugin extends JavaPlugin {
             return true;
         }
         // Targeting another player
+        if(!sender.hasPermission("simpleenderchest.use.others")) {
+            openEnderChest(player, player);
+            return true;
+        }
         String targetName = args[0];
         handleTargetPlayer(player, targetName);
         return true;
     }
 
     private void handleTargetPlayer(Player sender, String targetName) {
-        if(!sender.hasPermission("simpleenderchest.use.others")) {
-            openEnderChest(sender, sender);
-            return;
-        }
         Player target = sender.getServer().getPlayerExact(targetName);
         if(target == null) {
             sender.sendMessage("Could not find player with name " + targetName + "!");
